@@ -1,0 +1,13 @@
+﻿  Source.cpp
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(17,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(23,2): message : see reference to class template instantiation 'LinkedList<E>' being compiled
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(20,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(21,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(55,1): warning C5043: 'LinkedList<E>::removeFront': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(17,7): message : see declaration of 'LinkedList<E>::removeFront'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(88,1): warning C5043: 'LinkedList<E>::readFront': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(20,10): message : see declaration of 'LinkedList<E>::readFront'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(94,1): warning C5043: 'LinkedList<E>::readBack': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(21,10): message : see declaration of 'LinkedList<E>::readBack'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Source.cpp(4,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  DataProj2.vcxproj -> C:\Users\josep\source\repos\JosephRabbat\DataProj2\x64\Debug\DataProj2.exe
