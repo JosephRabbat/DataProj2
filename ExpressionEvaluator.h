@@ -11,9 +11,10 @@ private:
     ListStack<double>* valueStack;
     ListStack<char>* opStack;
     std::string expression;
+    ListStack<char>* numberStack;
 
     bool isOperator(char c) const;
-    double stringToDouble(const std::string& str) const;
+    double stringToDouble(const std::string str) const;
     Position<std::string>* buildExpressionTree();
     double evaluateTree(Position<std::string>* p);
     int precedence(char op) const;

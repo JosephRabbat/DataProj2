@@ -5,7 +5,7 @@ bool ExpressionEvaluator::isOperator(char c) const
     return (c == '+' || c == '-' || c == '*' || c == '/');
 }
 
-double ExpressionEvaluator::stringToDouble(const std::string& str) const
+double ExpressionEvaluator::stringToDouble(const std::string str) const
 {
     return std::stod(str);
 }
@@ -18,12 +18,21 @@ Position<std::string>* ExpressionEvaluator::buildExpressionTree()
     ListStack<char> operators;
     char token;
     while (iss >> token) {
-        Position<std::string>* newNode = new Position<std::string>;
-        newNode->setElem(std::string(1, token));
         if (!isOperator(token)) {
-            nodes.push(newNode);
+            if (std::isdigit(token) || token == '.') {
+                // Operand, push onto the number stack
+                numberStack->push(token);
+            }
         }
         else {
+            Position<std::string>* temp = new Position<std::string>;
+            temp->elem = "";
+            while (!numberStack->empty())
+            {
+                temp->elem = numberStack->top() + temp->elem;
+                numberStack->pop();
+            }
+            nodes.push(temp);
             if (!operators.empty())
             {
                 while (precedence(operators.top()) >= precedence(token)) {
@@ -44,6 +53,14 @@ Position<std::string>* ExpressionEvaluator::buildExpressionTree()
             operators.push(token);
         }
     }
+    Position<std::string>* temp = new Position<std::string>;
+    temp->elem = "";
+    while (!numberStack->empty())
+    {
+        temp->elem = numberStack->top() + temp->elem;
+        numberStack->pop();
+    }
+    nodes.push(temp);
     while (!operators.empty()) {
         Position<std::string>* newNode = new Position<std::string>;
         newNode->setElem(std::string(1, operators.top()));
@@ -60,7 +77,6 @@ Position<std::string>* ExpressionEvaluator::buildExpressionTree()
 
 double ExpressionEvaluator::evaluateTree(Position<std::string>* p)
 {
-
     if (p->isExternal()) {
         return stringToDouble(p->getElem()); // Leaf node (operand)
     }
@@ -93,7 +109,10 @@ void ExpressionEvaluator::setExpression(std::string expr)
 
 ExpressionEvaluator::ExpressionEvaluator()
 {
-    expressionTree = new binaryTree<std::string>; valueStack = new ListStack<double>; opStack = new ListStack<char>;
+    expressionTree = new binaryTree<std::string>; 
+    valueStack = new ListStack<double>; 
+    opStack = new ListStack<char>;
+    numberStack = new ListStack<char>;
 }
 
 ExpressionEvaluator::~ExpressionEvaluator()
@@ -125,14 +144,21 @@ double ExpressionEvaluator::evaluateUsingStacks()
     std::istringstream iss(expression);
     char token;
     while (iss >> token) {
-        if (std::isdigit(token)) {
-            // Operand, push onto the value stack
-            double operand = static_cast<double>(token - '0');
-            valueStack->push(operand); // Convert char to integer
+        if (std::isdigit(token) || token == '.') {
+            // Operand, push onto the number stack
+            numberStack->push(token);
         }
         else if (isOperator(token)) {
             // Operator, pop and evaluate until the stack is empty or top has lower precedence
 
+            std::string temp = "";
+            while (!numberStack->empty())
+            {
+                temp = numberStack->top() + temp;
+                numberStack->pop();
+            }
+            valueStack->push(stringToDouble(temp));
+            
             if (!opStack->empty())
             {
                 while (precedence(opStack->top()) >= precedence(token))
@@ -161,6 +187,14 @@ double ExpressionEvaluator::evaluateUsingStacks()
             opStack->push(token);
         }
     }
+
+    std::string temp = "";
+    while (!numberStack->empty())
+    {
+        temp = numberStack->top() + temp;
+        numberStack->pop();
+    }
+    valueStack->push(stringToDouble(temp));
 
     // Process remaining operators
     while (!opStack->empty()) {
