@@ -2,15 +2,15 @@
 
 void EvaluationController::setExpression(std::string expr)
 {
-    expression = expr;
+    expression = expr; // set expression
 }
 
 EvaluationController::EvaluationController()
 {
-    expression = "";
+    expression = ""; // initialize expression
 }
 
-EvaluationController::~EvaluationController()
+EvaluationController::~EvaluationController() // destructor
 {
     destroyExpressionTree();
     Stacks.~StackEvaluator();
@@ -19,19 +19,15 @@ EvaluationController::~EvaluationController()
 double EvaluationController::evaluateUsingTree()
 {
     Tree.buildExpressionTree(expression); return Tree.evaluateTree(Tree.getRoot());
+    // build tree then evaluate it
 }
 
 void EvaluationController::destroyExpressionTree()
 {
-    Tree.destroy();
-}
-
-void EvaluationController::printExpressionTree()
-{
-    Tree.print();
+    Tree.destroy(); // destroy the tree
 }
 
 double EvaluationController::evaluateUsingStacks()
 {
-    return Stacks.evaluate(expression);
+    return Stacks.evaluate(expression); // evaulate using stacks
 }

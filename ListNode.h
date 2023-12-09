@@ -7,8 +7,8 @@ private:
 	E data;
 	ListNode<E>* next;
 public:
-	ListNode();
-	E NodeData() const;
+	ListNode(); // constructor
+	E NodeData() const; // returns the data held in node
 	friend class LinkedList<E>;
 };
 template<typename E>

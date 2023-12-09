@@ -10,16 +10,16 @@ private:
 	ListNode<E>* tail;
 	int csize;
 public:
-	LinkedList();
-	~LinkedList();
-	bool empty() const;
-	void addFront(const E e);
-	void removeFront() throw(EmptyContainer);
-	void addBack(const E e);
-	void print() const;
-	const E readFront() const throw(EmptyContainer);
-	const E readBack() const throw(EmptyContainer);
-	const int size() const;
+	LinkedList(); // constructor
+	~LinkedList(); // destructor
+	bool empty() const; // returns 1 if linked list is empty
+	void addFront(const E e); // function to add at the head of the list
+	void removeFront() throw(EmptyContainer); // function to remove from the front of the list
+	void addBack(const E e); // function to add at the tail of the list
+	void print() const; // function to print the list 
+ 	const E readFront() const throw(EmptyContainer); // function to read at the head
+	const E readBack() const throw(EmptyContainer); // function to read at the tail
+	const int size() const; // returns the number of nodes
 };
 template<typename E> inline LinkedList<E>::LinkedList()
 {

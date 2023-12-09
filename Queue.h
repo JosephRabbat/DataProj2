@@ -7,14 +7,14 @@ class Queue
 private:
 	LinkedList<E>* q;
 public:
-	Queue();
-	~Queue();
+	Queue(); // constructor
+	~Queue(); // destructor
 
-	int size() const;
-	bool empty() const;
-	const E front() const throw(EmptyContainer);
-	void enqueue(const E e);
-	const E dequeue() throw(EmptyContainer);
+	int size() const; // returns the size of the queue
+	bool empty() const; // returns 1 if queue is empty
+	const E front() const throw(EmptyContainer); // returns the element at the front of the queue
+	void enqueue(const E e); // add an element at the back of the queue
+	const E dequeue() throw(EmptyContainer); // remove element from front of queue
 };
 template<typename E>
 inline Queue<E>::Queue()
@@ -25,11 +25,8 @@ template<typename E>
 inline Queue<E>::~Queue()
 {
 	while (!empty())
-
 	{
-
 		dequeue();
-
 	}
 }
 template<typename E>
