@@ -8,7 +8,7 @@ private:
 	LinkedList<Element>* S;
 public:
 	ListStack() { S = new LinkedList<Element>; }; // Constructor
-	~ListStack() { delete S; }; // Destructor
+	~ListStack() { while (!empty()) pop(); }; // Destructor
 	void pop() // pop element from stack
 	{
 		if (empty()) throw EmptyStack(); // exception if stack is empty

@@ -2,7 +2,7 @@
 
 #pragma once
 template <typename E> class binaryTree;
-class ExpressionEvaluator;
+class EvaluationController;
 
 template <typename E> class Position {
 public:
@@ -16,7 +16,7 @@ public:
 	Position<E>* getParent() { return parentNode; }
 	E getElem() { return elem; }
 	void setElem(E i) { elem = i; }
-	friend class ExpressionEvaluator;
+	friend class TreeEvaluator;
 	friend class binaryTree<E>;
 private:
 	E elem;

@@ -2,7 +2,7 @@
 #include <iostream>
 #include "Position.h"
 
-class ExpressionEvaluator;
+class EvaluationController;
 
 template <typename E> class binaryTree
 {
@@ -30,7 +30,7 @@ public:
 	void destroy();
 	Position<E>* getRoot() { return root; }
 	void print() const;
-	friend class ExpressionEvaluator;
+	friend class TreeEvaluator;
 };
 
 template<typename E> void binaryTree<E>::inorder(Position<E>* p) const

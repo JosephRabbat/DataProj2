@@ -1,4 +1,4 @@
-﻿  ExpressionEvaluator.cpp
+﻿  EvaluationController.cpp
 C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(17,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
 C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(23,2): message : see reference to class template instantiation 'LinkedList<E>' being compiled
 C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(20,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
@@ -9,6 +9,151 @@ C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(88,1): warning C
 C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(20,10): message : see declaration of 'LinkedList<E>::readFront'
 C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(94,1): warning C5043: 'LinkedList<E>::readBack': exception specification does not match previous declaration
 C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(21,10): message : see declaration of 'LinkedList<E>::readBack'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\TreeEvaluator.h(18,71): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\TreeEvaluator.h(19,66): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\StackEvaluator.h(18,74): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  Source.cpp
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(17,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(23,2): message : see reference to class template instantiation 'LinkedList<E>' being compiled
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(20,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(21,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(55,1): warning C5043: 'LinkedList<E>::removeFront': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(17,7): message : see declaration of 'LinkedList<E>::removeFront'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(88,1): warning C5043: 'LinkedList<E>::readFront': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(20,10): message : see declaration of 'LinkedList<E>::readFront'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(94,1): warning C5043: 'LinkedList<E>::readBack': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(21,10): message : see declaration of 'LinkedList<E>::readBack'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\TreeEvaluator.h(18,71): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\TreeEvaluator.h(19,66): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\StackEvaluator.h(18,74): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(15,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(18,2): message : see reference to class template instantiation 'Queue<E>' being compiled
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(17,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(49,1): warning C5043: 'Queue<E>::front': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(15,10): message : see declaration of 'Queue<E>::front'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(62,1): warning C5043: 'Queue<E>::dequeue': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(17,10): message : see declaration of 'Queue<E>::dequeue'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Source.cpp(6,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(62,1): warning C5043: 'Queue<double>::dequeue': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(17,10): message : see declaration of 'Queue<double>::dequeue'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(62,1): message : while compiling class template member function 'const E Queue<E>::dequeue(void) throw(EmptyContainer)'
+          with
+          [
+              E=double
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(31,10): message : see reference to function template instantiation 'const E Queue<E>::dequeue(void) throw(EmptyContainer)' being compiled
+          with
+          [
+              E=double
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(21,1): message : while compiling class template member function 'Queue<double>::Queue(void)'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Source.cpp(8,16): message : see reference to function template instantiation 'Queue<double>::Queue(void)' being compiled
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(55,1): warning C5043: 'LinkedList<E>::removeFront': exception specification does not match previous declaration
+          with
+          [
+              E=double
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(17,7): message : see declaration of 'LinkedList<E>::removeFront'
+          with
+          [
+              E=double
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(55,1): message : while compiling class template member function 'void LinkedList<E>::removeFront(void) throw(EmptyContainer)'
+          with
+          [
+              E=double
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(66,16): message : see reference to function template instantiation 'void LinkedList<E>::removeFront(void) throw(EmptyContainer)' being compiled
+          with
+          [
+              E=double
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(43,1): message : while compiling class template member function 'bool Queue<double>::empty(void) const'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(27,2): message : see reference to function template instantiation 'bool Queue<double>::empty(void) const' being compiled
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(88,1): warning C5043: 'LinkedList<E>::readFront': exception specification does not match previous declaration
+          with
+          [
+              E=double
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(20,10): message : see declaration of 'LinkedList<E>::readFront'
+          with
+          [
+              E=double
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(88,1): message : while compiling class template member function 'const E LinkedList<E>::readFront(void) throw(EmptyContainer) const'
+          with
+          [
+              E=double
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\Queue.h(65,9): message : see reference to function template instantiation 'const E LinkedList<E>::readFront(void) throw(EmptyContainer) const' being compiled
+          with
+          [
+              E=double
+          ]
+  TreeEvaluator.cpp
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(17,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(23,2): message : see reference to class template instantiation 'LinkedList<E>' being compiled
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(20,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(21,1): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(55,1): warning C5043: 'LinkedList<E>::removeFront': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(17,7): message : see declaration of 'LinkedList<E>::removeFront'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(88,1): warning C5043: 'LinkedList<E>::readFront': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(20,10): message : see declaration of 'LinkedList<E>::readFront'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(94,1): warning C5043: 'LinkedList<E>::readBack': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(21,10): message : see declaration of 'LinkedList<E>::readBack'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\TreeEvaluator.h(18,71): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\TreeEvaluator.h(19,66): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\TreeEvaluator.cpp(11,1): warning C5043: 'TreeEvaluator::evaluateTree': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\TreeEvaluator.h(19,12): message : see declaration of 'TreeEvaluator::evaluateTree'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\TreeEvaluator.cpp(33,1): warning C5043: 'TreeEvaluator::buildExpressionTree': exception specification does not match previous declaration
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\TreeEvaluator.h(18,10): message : see declaration of 'TreeEvaluator::buildExpressionTree'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(55,1): warning C5043: 'LinkedList<Element>::removeFront': exception specification does not match previous declaration
+          with
+          [
+              Element=char
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(17,7): message : see declaration of 'LinkedList<Element>::removeFront'
+          with
+          [
+              Element=char
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(55,1): message : while compiling class template member function 'void LinkedList<Element>::removeFront(void) throw(EmptyContainer)'
+          with
+          [
+              Element=char
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(15,17): message : see reference to function template instantiation 'void LinkedList<Element>::removeFront(void) throw(EmptyContainer)' being compiled
+          with
+          [
+              Element=char
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(28,1): message : see reference to class template instantiation 'LinkedList<Element>' being compiled
+          with
+          [
+              Element=char
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(27,1): message : while compiling class template member function 'bool ListStack<char>::empty(void)'
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\TreeEvaluator.cpp(61,13): message : see reference to function template instantiation 'bool ListStack<char>::empty(void)' being compiled
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(88,1): warning C5043: 'LinkedList<Element>::readFront': exception specification does not match previous declaration
+          with
+          [
+              Element=char
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(20,10): message : see declaration of 'LinkedList<Element>::readFront'
+          with
+          [
+              Element=char
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(88,1): message : while compiling class template member function 'const E LinkedList<E>::readFront(void) throw(EmptyContainer) const'
+          with
+          [
+              E=char
+          ]
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(24,3): message : see reference to function template instantiation 'const E LinkedList<E>::readFront(void) throw(EmptyContainer) const' being compiled
+          with
+          [
+              E=char
+          ]
 C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(55,1): warning C5043: 'LinkedList<Element>::removeFront': exception specification does not match previous declaration
           with
           [
@@ -39,7 +184,7 @@ C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(22,1): message : 
           [
               Element=Position<std::string> *
           ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\ExpressionEvaluator.cpp(41,37): message : see reference to function template instantiation 'Element ListStack<Element>::top(void)' being compiled
+C:\Users\josep\source\repos\JosephRabbat\DataProj2\TreeEvaluator.cpp(72,37): message : see reference to function template instantiation 'Element ListStack<Element>::top(void)' being compiled
           with
           [
               Element=Position<std::string> *
@@ -64,98 +209,5 @@ C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(24,3): message : 
           [
               E=Position<std::string> *
           ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(55,1): warning C5043: 'LinkedList<Element>::removeFront': exception specification does not match previous declaration
-          with
-          [
-              Element=char
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(17,7): message : see declaration of 'LinkedList<Element>::removeFront'
-          with
-          [
-              Element=char
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(55,1): message : while compiling class template member function 'void LinkedList<Element>::removeFront(void) throw(EmptyContainer)'
-          with
-          [
-              Element=char
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(15,17): message : see reference to function template instantiation 'void LinkedList<Element>::removeFront(void) throw(EmptyContainer)' being compiled
-          with
-          [
-              Element=char
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(28,1): message : see reference to class template instantiation 'LinkedList<Element>' being compiled
-          with
-          [
-              Element=char
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(27,1): message : while compiling class template member function 'bool ListStack<char>::empty(void)'
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\ExpressionEvaluator.cpp(30,13): message : see reference to function template instantiation 'bool ListStack<char>::empty(void)' being compiled
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(88,1): warning C5043: 'LinkedList<Element>::readFront': exception specification does not match previous declaration
-          with
-          [
-              Element=char
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(20,10): message : see declaration of 'LinkedList<Element>::readFront'
-          with
-          [
-              Element=char
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(88,1): message : while compiling class template member function 'const E LinkedList<E>::readFront(void) throw(EmptyContainer) const'
-          with
-          [
-              E=char
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(24,3): message : see reference to function template instantiation 'const E LinkedList<E>::readFront(void) throw(EmptyContainer) const' being compiled
-          with
-          [
-              E=char
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(55,1): warning C5043: 'LinkedList<Element>::removeFront': exception specification does not match previous declaration
-          with
-          [
-              Element=double
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(17,7): message : see declaration of 'LinkedList<Element>::removeFront'
-          with
-          [
-              Element=double
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(55,1): message : while compiling class template member function 'void LinkedList<Element>::removeFront(void) throw(EmptyContainer)'
-          with
-          [
-              Element=double
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(15,17): message : see reference to function template instantiation 'void LinkedList<Element>::removeFront(void) throw(EmptyContainer)' being compiled
-          with
-          [
-              Element=double
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(28,1): message : see reference to class template instantiation 'LinkedList<Element>' being compiled
-          with
-          [
-              Element=double
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(27,1): message : while compiling class template member function 'bool ListStack<double>::empty(void)'
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\ExpressionEvaluator.cpp(141,5): message : see reference to function template instantiation 'bool ListStack<double>::empty(void)' being compiled
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(88,1): warning C5043: 'LinkedList<Element>::readFront': exception specification does not match previous declaration
-          with
-          [
-              Element=double
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(20,10): message : see declaration of 'LinkedList<Element>::readFront'
-          with
-          [
-              Element=double
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\LinkedList.h(88,1): message : while compiling class template member function 'const E LinkedList<E>::readFront(void) throw(EmptyContainer) const'
-          with
-          [
-              E=double
-          ]
-C:\Users\josep\source\repos\JosephRabbat\DataProj2\ListStack.h(24,3): message : see reference to function template instantiation 'const E LinkedList<E>::readFront(void) throw(EmptyContainer) const' being compiled
-          with
-          [
-              E=double
-          ]
+  Generating Code...
   DataProj2.vcxproj -> C:\Users\josep\source\repos\JosephRabbat\DataProj2\x64\Debug\DataProj2.exe
